@@ -1,23 +1,24 @@
-on: 
-  push: 
+on:
+  push:
     branches:
       - main
-name: 🚀 Deploy teste website on push - hostinger
+
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  ftp-deploy:
     runs-on: ubuntu-latest
+
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v4
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: 31.97.162.177
-        username: teste
-        password: BleDK102dLavyZMAfqRZ
-        port: 21
-        server-dir: ./
-        protocol: ftp
-   
+      - name: Clonar repositório
+        uses: actions/checkout@v4
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.nossafco.com.br
+          username: teste
+          password: BleDK102dLavyZMAfqRZ
+          port: 21
+          protocol: ftp
+          local-dir: ./
+          server-dir: ./
+          dangerous-clean-slate: false
