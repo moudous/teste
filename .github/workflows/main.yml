@@ -17,7 +17,7 @@ jobs:
         with:
           server: 31.97.162.177
           username: teste2
-          password: o9ddEzis44MRge3wxj33
+          password:  ${{ secrets.PASSWORD_ERP_SSH }}
           port: 22
-          uploads: |
+          uploads: $PASSWORD_ERP_SSH
             ./ => ./htdocs/teste.nossafco.com.br/public
