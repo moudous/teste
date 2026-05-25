@@ -19,5 +19,5 @@ jobs:
           username: teste2
           password:  ${{ secrets.PASSWORD_ERP_SSH }}
           port: 22
-          uploads: $PASSWORD_ERP_SSH
+          uploads: ./
             ./ => ./htdocs/teste.nossafco.com.br/public
