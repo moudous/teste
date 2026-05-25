@@ -17,7 +17,7 @@ jobs:
         with:
           server: 31.97.162.177
           username: teste2
-          password: 74PZYKg0h9rgo3m9zhFd
+          password: o9ddEzis44MRge3wxj33
           port: 22
           uploads: |
             ./ => ./htdocs/teste.nossafco.com.br/public
