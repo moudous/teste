@@ -19,8 +19,8 @@ jobs:
         uses: Dylan700/sftp-upload-action@latest
         with:
           server: 31.97.162.177
-          username: teste2
-          password:  ${{ secrets.PASSWORD_ERP_SSH }}
+          username: teste
+          password:  ${{ secrets.senha }}
           port: 22
           uploads: |
             ./ => ./htdocs/teste.nossafco.com.br/public
