@@ -20,4 +20,4 @@ jobs:
           password: 74PZYKg0h9rgo3m9zhFd
           port: 22
           uploads: |
-            ./ => ./
+            ./ => ./htdocs/teste.nossafco.com.br/public
