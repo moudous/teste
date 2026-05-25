@@ -23,4 +23,4 @@ jobs:
           password:  ${{ secrets.senha }}
           port: 22
           uploads: |
-            ./ => ./htdocs/teste.nossafco.com.br/public
+            ./ => ./htdocs/teste.nossafco.com.br
