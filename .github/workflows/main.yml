@@ -14,7 +14,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.nossafco.com.br
+        server: 31.97.162.177
         username: teste
         password: BleDK102dLavyZMAfqRZ
         port: 21
