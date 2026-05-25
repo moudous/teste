@@ -18,6 +18,6 @@ jobs:
         username: teste
         password: BleDK102dLavyZMAfqRZ
         port: 21
-        server-dir: /home/nossafco-teste/htdocs/teste.nossafco.com.br/public/
+        server-dir: ./
         protocol: ftp
    
